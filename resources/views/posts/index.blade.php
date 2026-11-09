@@ -52,7 +52,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         @forelse ($posts as $post)
-            <article class="bg-white border border-slate-200 rounded-lg p-5 hover:border-emerald-500 transition-colors flex flex-col">
+            <a href="{{ url('/posts/' . $post->id) }}" class="block bg-white border border-slate-200 rounded-lg p-5 hover:border-emerald-500 transition-colors flex flex-col group">
                 <div class="flex items-center justify-between gap-2 mb-3">
                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
                         {{ $post->category }}
@@ -64,10 +64,8 @@
                     @endif
                 </div>
 
-                <h2 class="text-lg font-bold text-slate-900 mb-2">
-                    <a href="{{ url('/posts/' . $post->id) }}" class="hover:text-emerald-600 transition-colors">
-                        {{ $post->title }}
-                    </a>
+                <h2 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-colors mb-2">
+                    {{ $post->title }}
                 </h2>
 
                 <p class="text-sm text-slate-600 line-clamp-3 mb-4 flex-1">
@@ -78,7 +76,7 @@
                     <span>{{ $post->published_at ? $post->published_at->format('M d, Y') : 'Draft' }}</span>
                     <span>{{ $post->views }} {{ Str::plural('view', $post->views) }}</span>
                 </div>
-            </article>
+            </a>
         @empty
             <div class="col-span-full py-12 text-center bg-white border border-slate-200 rounded-lg">
                 <p class="text-slate-600 font-medium">No posts match your search.</p>
