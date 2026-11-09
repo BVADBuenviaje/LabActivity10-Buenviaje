@@ -14,6 +14,12 @@
 /.zed
 /auth.json
 /node_modules
+node_modules/
+node_modules
+/database/*.sqlite
+/database/*.sqlite-journal
+database/database.sqlite
+*.sqlite
 /public/build
 /public/fonts-manifest.dev.json
 /public/hot
