@@ -25,9 +25,5 @@
     <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         @yield('content')
     </main>
-
-    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
-        <p>&copy; {{ date('Y') }} Barangay Bulletin - Purok Buenviaje. All rights reserved.</p>
-    </footer>
 </body>
 </html>
