@@ -35,8 +35,8 @@
             </div>
         </header>
 
-        <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-            {!! nl2br(e($post->body)) !!}
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line">
+            {{ $post->body }}
         </div>
     </article>
 </div>
