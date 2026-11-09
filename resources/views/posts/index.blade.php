@@ -5,13 +5,8 @@
 
 @section('content')
 <div class="space-y-6">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200 pb-5">
-        <div>
-            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Barangay Bulletin - Purok Buenviaje</h1>
-        </div>
-        <div class="text-xs sm:text-sm text-slate-600 bg-emerald-50 border border-emerald-200 rounded-md px-3 py-1.5 self-start sm:self-auto font-medium">
-            Showing {{ $posts->firstItem() ?? 0 }}–{{ $posts->lastItem() ?? 0 }} of {{ $posts->total() }} posts
-        </div>
+    <div class="border-b border-slate-200 pb-5">
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Barangay Bulletin - Purok Buenviaje</h1>
     </div>
 
     <form method="GET" action="{{ route('posts.index') }}" class="flex flex-col sm:flex-row gap-3 bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
@@ -97,10 +92,10 @@
     </div>
 
     <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-xs sm:text-sm text-slate-500 order-2 sm:order-1">
+        <p class="text-xs sm:text-sm text-slate-600 order-2 sm:order-1 font-medium">
             Showing {{ $posts->firstItem() ?? 0 }}–{{ $posts->lastItem() ?? 0 }} of {{ $posts->total() }} posts
         </p>
-        <div class="order-1 sm:order-2 w-full sm:w-auto">
+        <div class="order-1 sm:order-2 w-full sm:w-auto [&_nav>div:last-child>div:first-child]:hidden [&_nav>div:last-child]:justify-end">
             {{ $posts->links() }}
         </div>
     </div>
