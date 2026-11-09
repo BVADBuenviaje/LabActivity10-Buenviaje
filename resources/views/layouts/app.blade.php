@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans antialiased">
-    <nav class="bg-white border-b border-emerald-100 shadow-xs">
+    <nav class="bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a href="{{ route('posts.index') }}" class="flex items-center gap-2 text-emerald-800 hover:text-emerald-900 font-bold text-lg sm:text-xl tracking-tight transition-colors">
