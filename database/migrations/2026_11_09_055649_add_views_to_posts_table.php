@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    // LABEL: Migrations
+    // Migrations
     public function up(): void
     {
         Schema::table('posts', function (Blueprint $table) {

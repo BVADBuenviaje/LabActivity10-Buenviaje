@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Author extends Model
 {
-    // LABEL: Models
+    // Models
     use HasFactory;
 
     protected $fillable = [
