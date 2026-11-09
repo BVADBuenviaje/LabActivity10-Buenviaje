@@ -7,7 +7,7 @@
 <div class="max-w-3xl mx-auto space-y-6">
     <div>
         <a href="{{ route('posts.index') }}" class="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
-            &larr; Back to all announcements
+            &larr; Back
         </a>
     </div>
 
