@@ -8,7 +8,6 @@
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
             <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Barangay Bulletin - Purok Buenviaje</h1>
-            <p class="text-sm text-slate-500 mt-1">Community notices, advisories, and official updates</p>
         </div>
         <div class="text-xs sm:text-sm text-slate-600 bg-emerald-50 border border-emerald-200 rounded-md px-3 py-1.5 self-start sm:self-auto font-medium">
             Showing {{ $posts->firstItem() ?? 0 }}–{{ $posts->lastItem() ?? 0 }} of {{ $posts->total() }} posts
